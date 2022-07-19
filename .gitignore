@@ -1,4 +1,11 @@
+### Styles Cache and Maps
 .sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
+
+### IDE Settings
+.vscode/
+
+### Node Modules
+node_modules/
