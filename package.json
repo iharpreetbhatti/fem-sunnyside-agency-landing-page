@@ -1,0 +1,20 @@
+{
+  "name": "fem-sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "description": "Frontend Mentor's Challenge to building a Landing Page for an Agency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iharpreetbhatti/fem-sunnyside-agency-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iharpreetbhatti/fem-sunnyside-agency-landing-page/issues"
+  },
+  "homepage": "https://github.com/iharpreetbhatti/fem-sunnyside-agency-landing-page#readme"
+}
