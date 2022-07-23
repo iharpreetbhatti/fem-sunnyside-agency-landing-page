@@ -4,7 +4,7 @@
   "description": "Frontend Mentor's Challenge to building a Landing Page for an Agency",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "http-server \"./dist\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/iharpreetbhatti/fem-sunnyside-agency-landing-page/issues"
   },
-  "homepage": "https://github.com/iharpreetbhatti/fem-sunnyside-agency-landing-page#readme"
+  "homepage": "https://github.com/iharpreetbhatti/fem-sunnyside-agency-landing-page#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "concat": "^1.0.3",
+    "cssnano": "^5.1.12",
+    "eslint": "^8.20.0",
+    "http-server": "^14.1.1",
+    "terser": "^5.14.2"
+  }
 }
