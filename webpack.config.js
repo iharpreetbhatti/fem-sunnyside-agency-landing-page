@@ -4,8 +4,8 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+// const CopyWebpackPlugin = require("copy-webpack-plugin");
+// const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
 module.exports = (env, options) => {
   const isDevMode = options.mode === "development";
@@ -18,12 +18,13 @@ module.exports = (env, options) => {
       assetModuleFilename: "assets/[hash][ext][query]",
     },
     devServer: {
+      watchFiles: {
+        paths: ["./src/**/*"],
+      },
       static: path.resolve(__dirname, "dist"),
       port: 8080,
       hot: true,
       open: true,
-      compress: true,
-      historyApiFallback: true,
     },
     module: {
       rules: [
@@ -48,6 +49,9 @@ module.exports = (env, options) => {
         {
           test: /\.html$/i,
           loader: "html-loader",
+          options: {
+            esModule: false,
+          },
         },
         {
           test: /\.(png|jpe?g|gif|svg)$/i,
@@ -79,13 +83,12 @@ module.exports = (env, options) => {
           removeComments: true,
           collapseWhitespace: true,
         },
+        filename: "index.html",
       }),
       // new CopyWebpackPlugin({
       //   patterns: [{ from: "src/assets", to: "assets" }],
       // }),
-      new BundleAnalyzerPlugin({
-        openAnalyzer: false,
-      }),
+      // new BundleAnalyzerPlugin(),
     ],
     devtool: isDevMode ? "eval-source-map" : "source-map",
   };

@@ -4,8 +4,8 @@
   "description": "Frontend Mentor's Challenge to building a Landing Page for an Agency",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --mode development --env development",
-    "build": "webpack --mode production --env production"
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",

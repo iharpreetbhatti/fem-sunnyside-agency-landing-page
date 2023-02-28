@@ -1,4 +1,7 @@
-import greet from "./scripts/test";
+import greet from "./scripts/app";
 import "./styles/style.scss";
 
-greet("Harpreet");
+console.log("Harpreet");
+console.log("Singh");
+
+greet("Harpreet Singh");
