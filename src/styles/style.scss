@@ -1,9 +1,34 @@
-// @import "../../node_modules/bulma/bulma.sass";
+// @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
 
-body {
-  background-color: antiquewhite;
+// Always use format correctly while declaring format in font-face
+
+@font-face {
+  font-family: "Barlow";
+  src: url(../assets/fonts/Barlow-SemiBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 600;
 }
 
-h1 {
-  color: brown;
+@font-face {
+  font-family: "Fraunces";
+  src: url(../assets/fonts/Fraunces_9pt-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700;
 }
+
+@font-face {
+  font-family: "Fraunces";
+  src: url(../assets/fonts/Fraunces_9pt-Black.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+$family-primary: "Fraunces", serif;
+$family-secondary: "Barlow", sans-serif;
+
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/helpers/color.sass";
+@import "../../node_modules/bulma/sass/helpers/typography.sass";
