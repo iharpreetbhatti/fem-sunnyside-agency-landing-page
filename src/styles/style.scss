@@ -59,9 +59,10 @@ $navbar-tab-hover-background-color: transparent;
     border-right-color: $navbar-background-color;
     border-bottom-color: $navbar-background-color;
   }
+}
 
-  .header .navbar-item .button {
-    background-color: $warning;
-    border-color: transparent;
+@include desktop {
+  .header .navbar-end .navbar-item .button {
+    background-color: $light;
   }
 }
