@@ -25,9 +25,9 @@
 
 <body>
 
-  <header class="hero is-fullheight">
+  <header class="hero">
     <div class="hero-head">
-      <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
             <img src="./assets/images/logo.svg" alt="Sunnyside Logo" width="125" height="26">
@@ -39,27 +39,44 @@
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div class="navbar-menu mt-5 mx-4 is-relative">
-          <div class=" navbar-end">
-            <a href="#" class="navbar-item has-text-centered py-4">About</a>
-            <a href="#" class="navbar-item has-text-centered py-4">Services</a>
-            <a href="#" class="navbar-item has-text-centered py-4">Projects</a>
-            <a href="#" class="navbar-item has-text-centered py-4">
-              <button class="button is-warning is-hidden-desktop is-rounded is-uppercase is-family-primary p-5">
-                Contact
-              </button>
-              <button class="button is-light is-hidden-touch is-rounded is-uppercase is-family-primary p-5">
+
+        <!-- Mobile Menu -->
+        <div class="navbar-menu is-hidden-desktop my-5 mx-4 is-relative">
+          <div class="navbar-end py-5">
+            <a href="#" class="navbar-item has-text-centered py-5 has-text-grey-light">About</a>
+            <a href="#" class="navbar-item has-text-centered py-5 has-text-grey-light">Services</a>
+            <a href="#" class="navbar-item has-text-centered py-5 has-text-grey-light">Projects</a>
+            <a href="#" class="navbar-item has-text-centered py-5">
+              <button class="button is-warning  is-rounded is-uppercase is-family-primary p-5">
                 Contact
               </button>
             </a>
           </div>
         </div>
+
+        <!-- Desktop Menu -->
+        <div class="navbar-menu is-hidden-touch is-relative">
+
+          <div class="navbar-end py-5">
+            <a href="#" class="navbar-item has-text-centered py-5 has-text-light">About</a>
+            <a href="#" class="navbar-item has-text-centered py-5 has-text-light">Services</a>
+            <a href="#" class="navbar-item has-text-centered py-5 has-text-light">Projects</a>
+            <a href="#" class="navbar-item has-text-centered py-5">
+              <button class="button is-light is-rounded is-uppercase is-family-primary p-5">
+                Contact
+              </button>
+            </a>
+          </div>
+        </div>
+
       </nav>
     </div>
-    <div class="hero-body">
+    <div class="hero-body is-flex is-align-items-center">
       <div class="container">
-        <h1 class="title is-1 has-text-centered is-uppercase has-text-light is-family-primary">We are creatives</h1>
-        <div class="block has-text-centered">
+        <h1 class="title is-2 is-size-1-desktop has-text-centered is-uppercase has-text-light is-family-primary pb-5">We
+          are
+          creatives</h1>
+        <div class="block has-text-centered pt-5">
           <img src="./assets/images/icon-arrow-down.svg" alt="Down Arrow">
         </div>
       </div>
