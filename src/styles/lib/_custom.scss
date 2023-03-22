@@ -1,0 +1,16 @@
+.navbar {
+  @include touch {
+    .navbar-end::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: 0;
+      top: 0;
+      border: 0.625rem solid $white;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      transform: translateY(-100%);
+    }
+  }
+}

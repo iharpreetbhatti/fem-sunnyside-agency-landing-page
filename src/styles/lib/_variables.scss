@@ -1,0 +1,57 @@
+// @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+
+// Always use format correctly while declaring format in font-face
+
+@font-face {
+  font-family: "Barlow";
+  src: url(../assets/fonts/Barlow-SemiBold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url(../assets/fonts/Fraunces_9pt-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url(../assets/fonts/Fraunces_9pt-Black.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+// ### Custom Colors ### //
+
+// Primary Colors
+$themeSoftRed: hsl(7, 99%, 70%);
+$themeYellow: hsl(51, 100%, 49%);
+$themeDarkDesaturatedCyan: hsl(167, 40%, 24%); // For graphic design text
+$themeDarkBlue: hsl(198, 62%, 26%); // For photography text
+$themeDarkModerateCyan: hsl(168, 34%, 41%); // For footer
+
+// Neutral Colors
+$themeVeryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+$themeVeryDarkGrayishBlue: hsl(213, 9%, 39%);
+$themeDarkGrayishBlue: hsl(232, 10%, 55%);
+$themeGrayishBlue: hsl(210, 4%, 67%);
+
+// Set Bulma Color Variables
+
+$danger: $themeSoftRed;
+$warning: $themeYellow;
+$success: $themeDarkDesaturatedCyan;
+$info: $themeDarkBlue;
+$primary: $themeDarkModerateCyan;
+
+// ### Typography ### //
+$family-primary: "Fraunces", serif;
+$family-secondary: "Barlow", sans-serif;
+$body-font-size: 1.125rem;
+$body-family: $family-secondary;
+
+// Other Custom Variables
+$navbar-item-hover-background-color: transparent;
+$navbar-tab-hover-background-color: transparent;
