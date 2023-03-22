@@ -1,3 +1,13 @@
+.hero {
+  background: url("../assets/images/mobile/image-header.jpg") no-repeat center
+    center/cover;
+
+  @include desktop {
+    background: url("../assets/images/desktop/image-header.jpg") no-repeat
+      center center/cover;
+  }
+}
+
 .navbar {
   @include touch {
     .navbar-end::before {
