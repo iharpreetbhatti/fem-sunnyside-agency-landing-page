@@ -38,3 +38,30 @@
     }
   }
 }
+
+.section-image {
+  width: 100%;
+  object-position: center center;
+  object-fit: cover;
+}
+
+.section-content {
+  max-width: 31rem;
+}
+
+.learn-more::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  left: 0;
+  bottom: 0;
+  height: 0.625rem;
+  border-radius: 0.3125rem;
+  background-color: $warning-light;
+  transform: translateX(-5%);
+  z-index: -10;
+}
+
+.learn-more:hover:before {
+  background-color: $warning;
+}
