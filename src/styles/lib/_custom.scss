@@ -42,11 +42,20 @@
 .section-image {
   width: 100%;
   object-position: center center;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .section-content {
   max-width: 31rem;
+
+  &-absolute {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 95%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+  }
 }
 
 .learn-more::before {
